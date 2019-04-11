@@ -1,0 +1,53 @@
+LINE SIZE: 2
+WORD[0] SIZE: 1 STR: <a>
+WORD[1] SIZE: 2 STR: <bb>
+------------------
+LINE SIZE: 0
+------------------
+LINE SIZE: 0
+------------------
+LINE SIZE: 9
+WORD[0] SIZE: 0 STR: <>
+WORD[1] SIZE: 0 STR: <>
+WORD[2] SIZE: 0 STR: <>
+WORD[3] SIZE: 3 STR: <			>
+WORD[4] SIZE: 3 STR: <hh	>
+WORD[5] SIZE: 0 STR: <>
+WORD[6] SIZE: 5 STR: <12345>
+WORD[7] SIZE: 1 STR: <	>
+WORD[8] SIZE: 0 STR: <>
+------------------
+LINE SIZE: 5
+WORD[0] SIZE: 11 STR: <::,;,;dddd:>
+WORD[1] SIZE: 0 STR: <>
+WORD[2] SIZE: 0 STR: <>
+WORD[3] SIZE: 0 STR: <>
+WORD[4] SIZE: 13 STR: <,fff:fff,:,:;>
+------------------
+LINE SIZE: 0
+------------------
+LINE SIZE: 0
+------------------
+LINE SIZE: 2
+WORD[0] SIZE: 7 STR: <ggggggg>
+WORD[1] SIZE: 4 STR: <:::k>
+------------------
+LINE SIZE: 0
+------------------
+LINE SIZE: 2
+WORD[0] SIZE: 5 STR: <aaaaa>
+WORD[1] SIZE: 2 STR: <24>
+------------------
+LINE SIZE: 2
+WORD[0] SIZE: 4 STR: <bbbb>
+WORD[1] SIZE: 5 STR: <pippo>
+------------------
+LINE SIZE: 2
+WORD[0] SIZE: 4 STR: <cccc>
+WORD[1] SIZE: 4 STR: <true>
+------------------
+LINE SIZE: 2
+WORD[0] SIZE: 3 STR: <ddd>
+WORD[1] SIZE: 5 STR: <false>
+------------------
+Normal termination

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/work/release/jUtil/defs" />
+          <root url="file://$USER_HOME$/work/release/jUtil/defs" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/work/release/jUtil/defs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$USER_HOME$/work/release/jUtil/defs" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/work/release/jUtil/defs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/work/release/jUtil/encodeDecode/src1" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/work/release/jUtil/encodeDecode/src1" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$USER_HOME$/work/release/jUtil/encodeDecode/src1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/work/release/jUtil/globalOptions" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/work/release/jUtil/globalOptions" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/work/release/jUtil/sorted/src1" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/work/release/jUtil/sorted/src1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/work/release/table_manip/java_rel_table/entryTables/src1" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/work/release/table_manip/java_rel_table/entryTables/src1" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$USER_HOME$/work/release/table_manip/java_rel_table/entryTables/src1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/work/release/jUtil/tkLines/src2" />
+          <root url="file://$USER_HOME$/work/release/jUtil/tkLines/src2" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/work/release/jUtil/tkLines/src2" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$USER_HOME$/work/release/jUtil/tkLines/src2" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/work/release/jUtil/tkLines/src2" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

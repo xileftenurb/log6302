@@ -1,0 +1,21 @@
+asddfs asdf asdf asfd
+child 1 None
+parent None 1
+nodeType 1 File
+name 1 /Volumes/1476426_Data/Chromium/src/out/Release/../../breakpad/src/common/dwarf/dwarf2reader.cc
+child 2 1
+parent 1 2
+nodeType 2 NamespaceDecl
+name 2 dwarf2reader
+lineEnd 2 2343
+colEnd 2 1
+lineBegin 2 52
+colBegin 2 1
+child 3 2
+parent 2 3
+nodeType 3 CXXConstructorDecl
+varType 6 class\ dwarf2reader::ByteReader\ *
+hasBody 3 1
+toType 58 const\ struct\ std::_Rb_tree_const_iterator<struct\ std::pair<const\ class\ std::basic_string<char>,\ struct\ std::pair<const\ char\ *,\ unsigned\ long\ long>\ >\ >
+name 3 CompilationUnit
+isImplicit 3 0

@@ -1,0 +1,7 @@
+#!/bin/tcsh
+
+source ./javaConfig.tcsh
+setenv CLASSPATH "$CLASSPATH":./src:./out:.
+
+#setenv
+java javascriptParseMain data/result.rdf $argv

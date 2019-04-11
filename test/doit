@@ -1,0 +1,153 @@
+#!/bin/tcsh
+
+#set javaDir = '/opt/j2sdk/bin'
+#set javaDir = '/usr/bin'
+
+#
+#set config = ''
+#set config = 'poly'
+#set config = 'laptop'
+#
+#if ("$config" == 'poly') then
+#
+#setenv CLASSPATH /home/merlo/work/software/jUtil/lex/tkManip:/home/merlo/work/software/lincl/galacticTk/dev/jSrc3:/home/merlo/work/software/jUtil/options:/home/merlo/work/software/jUtil/lex/nestedTk/dev/generic_jSrc:../gen:..:.
+#
+#
+#else if ("$config" == 'laptop') then
+#
+#
+##setenv CLASSPATH /home/merlo/work/software/tkManip:/home/merlo/work/software/galacticTk/dev/jSrc3:/home/merlo/work/software/options:/home/merlo/work/software/nestedTk/dev/generic_jSrc:../gen:..:.
+#
+#setenv CLASSPATH /home/merlo/work/software/jUtil/defs:/home/merlo/lib/java:/home/merlo/work/software/options:..:.
+#
+#else
+#    echo 'ERROR: invalid configuration' "$config"
+#    exit(1)
+#endif
+#
+
+source ../javaConfig.tcsh
+setenv CLASSPATH ..:"$CLASSPATH":../out:../src
+
+set srcdir = "../src"
+#cp "$srcdir"/*.C .
+
+set ALALL = FALSE
+#set ALALL = TRUE
+
+set cases = ''
+if ("$argv" != '') then
+    set cases = "$argv"
+else
+    set cases = '1'
+endif
+
+foreach testCase ( `echo "$cases"` )
+
+switch ( $testCase )
+
+case '1':
+echo "TEST 1: buzzParseMain typical"
+
+cp data/tkLines_1.dat tkLines.dat
+#"$javaDir"/java tkLinesMain >& res.rep
+#la ligne qui par le programme
+java buzzParseMain >& res.rep
+
+if ("$ALALL" == "TRUE") then
+	echo "ALIGNMENT REQUIRED"
+	cp res.rep data/res_1.rep
+endif
+
+diff res.rep data/res_1.rep
+
+breaksw
+
+
+case '2':
+echo "TEST 2: binTkLines typical"
+
+cp data/bTkLines_2.dat bTkLines.dat
+cp data/txtTkLines_2.dat txtTkLines.dat
+#"$javaDir"/java binTkLinesMain >& res.rep
+java binTkLinesMain >& res.rep
+
+if ("$ALALL" == "TRUE") then
+	echo "ALIGNMENT REQUIRED"
+	cp res.rep data/res_2.rep
+endif
+
+diff res.rep data/res_2.rep
+
+breaksw
+
+
+case '3':
+echo "TEST 3: binTkLines inconsistent lines"
+
+cp data/bTkLines_3.dat bTkLines.dat
+#"$javaDir"/java binTkLinesMain >& res.rep
+java binTkLinesMain >& res.rep
+
+if ("$ALALL" == "TRUE") then
+	echo "ALIGNMENT REQUIRED"
+	cp res.rep data/res_3.rep
+endif
+
+diff res.rep data/res_3.rep
+
+breaksw
+
+
+case '4':
+echo "TEST 4: escTkLines typical"
+
+cp data/txtTkLines_4.dat txtTkLines.dat
+#"$javaDir"/java escTkLinesMain >& res.rep
+java escTkLinesMain >& res.rep
+
+if ("$ALALL" == "TRUE") then
+	echo "ALIGNMENT REQUIRED"
+	cp res.rep data/res_4.rep
+endif
+
+diff res.rep data/res_4.rep
+
+breaksw
+
+
+
+case '5':
+echo "TEST 5: escTkLines - compatibility with C++ tkLines tests"
+#
+# strManip/tkLines/src3/test/data/tkLines_1,dat
+#
+
+cp data/tkLines_5.dat txtTkLines.dat
+#"$javaDir"/java escTkLinesMain >& res.rep
+java escTkLinesMain >& res.rep
+
+if ("$ALALL" == "TRUE") then
+	echo "ALIGNMENT REQUIRED"
+	cp res.rep data/res_5.rep
+endif
+
+diff res.rep data/res_5.rep
+
+breaksw
+
+
+
+
+
+default:
+    echo 'ERROR: invalid test case label'
+breaksw
+
+endsw
+
+end
+
+echo END TESTS
+
+exit 0

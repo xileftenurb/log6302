@@ -1,0 +1,186 @@
+LINE SIZE: 4
+WORD[0] SIZE: 6 STR: <asddfs>
+WORD[1] SIZE: 4 STR: <asdf>
+WORD[2] SIZE: 4 STR: <asdf>
+WORD[3] SIZE: 4 STR: <asfd>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 5 STR: <child>
+WORD[1] SIZE: 1 STR: <1>
+WORD[2] SIZE: 4 STR: <None>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 6 STR: <parent>
+WORD[1] SIZE: 4 STR: <None>
+WORD[2] SIZE: 1 STR: <1>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 8 STR: <nodeType>
+WORD[1] SIZE: 1 STR: <1>
+WORD[2] SIZE: 4 STR: <File>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 4 STR: <name>
+WORD[1] SIZE: 1 STR: <1>
+WORD[2] SIZE: 94 STR: </Volumes/1476426_Data/Chromium/src/out/Release/../../breakpad/src/common/dwarf/dwarf2reader.cc>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 5 STR: <child>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 1 STR: <1>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 6 STR: <parent>
+WORD[1] SIZE: 1 STR: <1>
+WORD[2] SIZE: 1 STR: <2>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 8 STR: <nodeType>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 13 STR: <NamespaceDecl>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 4 STR: <name>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 12 STR: <dwarf2reader>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 7 STR: <lineEnd>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 4 STR: <2343>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 6 STR: <colEnd>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 1 STR: <1>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 9 STR: <lineBegin>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 2 STR: <52>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 8 STR: <colBegin>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 1 STR: <1>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 5 STR: <child>
+WORD[1] SIZE: 1 STR: <3>
+WORD[2] SIZE: 1 STR: <2>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 6 STR: <parent>
+WORD[1] SIZE: 1 STR: <2>
+WORD[2] SIZE: 1 STR: <3>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 8 STR: <nodeType>
+WORD[1] SIZE: 1 STR: <3>
+WORD[2] SIZE: 18 STR: <CXXConstructorDecl>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 7 STR: <varType>
+WORD[1] SIZE: 1 STR: <6>
+WORD[2] SIZE: 32 STR: <class dwarf2reader::ByteReader *>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 7 STR: <hasBody>
+WORD[1] SIZE: 1 STR: <3>
+WORD[2] SIZE: 1 STR: <1>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 6 STR: <toType>
+WORD[1] SIZE: 2 STR: <58>
+WORD[2] SIZE: 150 STR: <const struct std::_Rb_tree_const_iterator<struct std::pair<const class std::basic_string<char>, struct std::pair<const char *, unsigned long long> > >>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 4 STR: <name>
+WORD[1] SIZE: 1 STR: <3>
+WORD[2] SIZE: 15 STR: <CompilationUnit>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <isImplicit>
+WORD[1] SIZE: 1 STR: <3>
+WORD[2] SIZE: 1 STR: <0>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 11 STR: <\func_begin>
+WORD[1] SIZE: 3 STR: <100>
+WORD[2] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 4 STR: <\101>
+WORD[2] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 3 STR: <102>
+WORD[2] SIZE: 9 STR: <\php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 11 STR: <func_begin\>
+WORD[1] SIZE: 3 STR: <103>
+WORD[2] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 4 STR: <104\>
+WORD[2] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 3 STR: <105>
+WORD[2] SIZE: 9 STR: <php.defs\>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 11 STR: <func_\begin>
+WORD[1] SIZE: 3 STR: <106>
+WORD[2] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 4 STR: <1\07>
+WORD[2] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 3 STR: <108>
+WORD[2] SIZE: 9 STR: <php\.defs>
+------------------
+LINE SIZE: 2
+WORD[0] SIZE: 14 STR: <func_begin 112>
+WORD[1] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 2
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 12 STR: <113 php.defs>
+------------------
+LINE SIZE: 5
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 3 STR: <114>
+WORD[2] SIZE: 19 STR: <php.defs
+func_begin>
+WORD[3] SIZE: 3 STR: <115>
+WORD[4] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 4 STR: <name>
+WORD[1] SIZE: 14 STR: <multi_line_str>
+WORD[2] SIZE: 5 STR: <a
+b
+c>
+------------------
+LINE SIZE: 3
+WORD[0] SIZE: 10 STR: <func_begin>
+WORD[1] SIZE: 3 STR: <116>
+WORD[2] SIZE: 8 STR: <php.defs>
+------------------
+LINE SIZE: 4
+WORD[0] SIZE: 8 STR: <xml_attr>
+WORD[1] SIZE: 1 STR: <5>
+WORD[2] SIZE: 5 STR: <scope>
+WORD[3] SIZE: 0 STR: <>
+------------------
+Normal termination

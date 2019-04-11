@@ -1,0 +1,10 @@
+NEXT IS VALID
+I_VAL: <123>
+NEXT IS VALID
+STR_VAL: <this_is_a_string>
+NEXT IS VALID
+STR_VAL: <  	 	this is		an unstripped string>
+NEXT IS VALID
+STR_VAL: <this is a stripped	 string>
+NEXT IS NOT VALID
+Normal termination

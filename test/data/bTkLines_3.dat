@@ -1,0 +1,13 @@
+TAG:<ParmVarDecl>
+ATTR:varNamereader
+ATTR:varTypeClassPointer
+ATTR:colBegin34
+ATTR:varTypeclass dwarf2reader::ByteReader *
+ATTR:lineEnd55
+ATTR:colEnd46ATTR:lineBegin55
+ATTR:id6
+ATTR:\* this is a 
+multiline comment*/
+ATTR:\* this is another 
+multiline comment*/
+

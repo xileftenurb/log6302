@@ -1,0 +1,58 @@
+
+READ NEXT (2)
+
+LINE SIZE: : 3
+WORD[0]: TAG:
+WORD[1]: <ParmVarDecl>
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: varName
+WORD[2]: reader
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: varTypeClass
+WORD[2]: Pointer
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: colBegin
+WORD[2]: 34
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: varType
+WORD[2]: class dwarf2reader::ByteReader *
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: lineEnd
+WORD[2]: 55
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: colEnd
+WORD[2]: 46
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: lineBegin
+WORD[2]: 55
+
+LINE SIZE: : 4
+WORD[0]: ATTR:
+WORD[1]: id
+WORD[2]: 6
+
+LINE SIZE: : 3
+WORD[0]: ATTR:
+WORD[1]: \* this is a 
+multiline comment*/
+
+LINE SIZE: : 3
+WORD[0]: ATTR:
+WORD[1]: \* this is another 
+multiline comment*/
+
+Normal termination

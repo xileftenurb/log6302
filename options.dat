@@ -1,0 +1,5 @@
+printOptions true
+fragThreshold 20
+cloneThreshold 20
+algoDistance manhatanNormal
+algoDataVec false

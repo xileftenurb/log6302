@@ -1,0 +1,13 @@
+#!/bin/tcsh
+
+source ./javaConfig.tcsh
+setenv CLASSPATH "$CLASSPATH":./src:./out:.
+
+#setenv
+
+if ("$1" == '') then
+    make clean
+    make all
+else
+    make $1
+endif
