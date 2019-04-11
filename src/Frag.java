@@ -56,7 +56,7 @@ public class Frag {
                     astTable.lineBeginTable.get(index) + ", " +
                     astTable.columnBeginTable.get(index ) + "]  to [" +
                     astTable.lineEndTable.get(index ) + ", " +
-                    astTable.columnEndTable.get(index) + "]";
+                    astTable.columnEndTable.get(index) + "]" + ", taille : " + nodesId.size();
         }
     }
 

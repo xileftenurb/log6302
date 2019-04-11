@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,6 +10,7 @@ public class Clone {
 
     public Clone(javascriptParseTableCl pastTable) {
         astTable = pastTable;
+        frags = new ArrayList<>();
     }
 
     public void add(Frag f) {
@@ -17,9 +19,9 @@ public class Clone {
 
     public String toString() {
         //première élément d'un fragment
-        String str = "\nClone : \n";
+        String str = "\nClone :";
         for(Frag f : frags) {
-            str += f.shortPrint() + "\n";
+            str += "\n" + f.shortPrint();
         }
         return str;
     }
