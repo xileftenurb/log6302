@@ -19,7 +19,7 @@ public class Clone {
 
     public String toString() {
         //première élément d'un fragment
-        String str = "\nClone :";
+        String str = "\n\nClone :";
         for(Frag f : frags) {
             str += "\n" + f.shortPrint();
         }

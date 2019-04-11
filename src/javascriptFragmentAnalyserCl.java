@@ -94,14 +94,16 @@ public class javascriptFragmentAnalyserCl {
         if(!visitedNode.contains(currentId)) {
             visitedNode.add(currentId);
             Set<Integer> currentSet = links.get(currentId);
-            if(currentSet != null && currentSet.size() > 0) {
-                if (currentClone == null) {
-                    currentClone = new Clone(astTable);
-                    clones.add(currentClone);
-                }
+            if(currentClone == null && currentSet != null && currentSet.size() > 0) {
+                currentClone = new Clone(astTable);
+                clones.add(currentClone);
+            }
+            if(currentClone != null) {
                 currentClone.add(fragments.get(currentId));
-                for(Integer nodeId : currentSet) {
-                    groupGraph(visitedNode, nodeId, links, fragments, clones, currentClone);
+                if(currentSet != null) {
+                    for(Integer nodeId : currentSet) {
+                        groupGraph(visitedNode, nodeId, links, fragments, clones, currentClone);
+                    }
                 }
             }
         }
