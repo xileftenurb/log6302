@@ -111,7 +111,10 @@
         //
 
         tableReader.read(tableStr);
-        astTable.print();
+        
+        if(globalOptionsCl.get("printTable").equals("true")) {
+            astTable.print();
+        }
 
         //
         // get AST root
@@ -133,13 +136,12 @@
             System.exit(1);
         }
 
-
-        javascriptAstPrettyPrintVisCl javascriptPrintVis =
-            new javascriptAstPrettyPrintVisCl();
-        javascriptPrintVis.initParams(astTable);
-        javascriptPrintVis.visit(rootNodeId, 0);
-
-
+        if(globalOptionsCl.get("printTree").equals("true")) {
+            javascriptAstPrettyPrintVisCl javascriptPrintVis =
+                    new javascriptAstPrettyPrintVisCl();
+            javascriptPrintVis.initParams(astTable);
+            javascriptPrintVis.visit(rootNodeId, 0);
+        }
 
 
         javascriptAstFragmentVisCl javascriptFragVis =
@@ -167,6 +169,12 @@
         System.out.println("LIST CLONES");
 
         System.out.println(clones);
+
+        System.out.println("END LIST CLONES");
+
+        System.out.println("nombre de fragment : " + listFrag.size());
+        System.out.println("nombre de clones : " + clones.size());
+
 
         System.out.println("Successful termination");
         System.exit(0);

@@ -84,7 +84,7 @@ public class javascriptFragmentAnalyserCl {
             return getDistanceManhatan(vec1, vec2);
         } else if(algo == algoDistance.manhatanNormal) {
             return getDistanceManhatanNormal(vec1, vec2);
-        } else if(algo == algoDistance.eucledien) {
+        } else if(algo == algoDistance.euclidien) {
             return getDistanceEucledienne(vec1, vec2);
         }
         return 0;

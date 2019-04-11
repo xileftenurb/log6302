@@ -1,5 +1,5 @@
 printOptions true
 fragThreshold 20
-cloneThreshold 20
+cloneThreshold 0
 algoDistance manhatanNormal
 algoDataVec false
