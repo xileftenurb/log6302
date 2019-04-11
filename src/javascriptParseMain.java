@@ -111,7 +111,7 @@
         //
 
         tableReader.read(tableStr);
-        
+
         if(globalOptionsCl.get("printTable").equals("true")) {
             astTable.print();
         }
@@ -174,7 +174,6 @@
 
         System.out.println("nombre de fragment : " + listFrag.size());
         System.out.println("nombre de clones : " + clones.size());
-
 
         System.out.println("Successful termination");
         System.exit(0);

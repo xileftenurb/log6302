@@ -67,15 +67,44 @@ public class javascriptFragmentAnalyserCl {
     private List<Clone> getClone(List<Frag> fragments, List<List<Integer>> dataVecs, algoDistance algo, double theshold) {
         List<Clone> clones = new ArrayList<>();
 
+        Map<Integer, Set<Integer>> links = new HashMap<>();
         for(int i = 0; i < dataVecs.size(); i++) {
             for(int j = i + 1; j < dataVecs.size(); j++) {
                 double distance = getDistance(dataVecs.get(i), dataVecs.get(j), algo);
                 if(distance <= theshold) {
-                    clones.add(new Clone(astTable, fragments.get(i), fragments.get(j), distance));
+                    Set set = links.get(i);
+                    if(set == null) {
+                        set = new HashSet();
+                        links.put(i, set);
+                    }
+                    set.add(j);
                 }
             }
         }
 
+        Set<Integer> visitedNode = new HashSet<>();
+        for(int i = 0; i < dataVecs.size(); i++) {
+            clones = groupGraph(visitedNode, i, links, fragments, clones, null);
+        }
+
+        return clones;
+    }
+
+    private List<Clone> groupGraph(Set<Integer> visitedNode, int currentId, Map<Integer, Set<Integer>> links, List<Frag> fragments, List<Clone> clones, Clone currentClone) {
+        if(!visitedNode.contains(currentId)) {
+            visitedNode.add(currentId);
+            Set<Integer> currentSet = links.get(currentId);
+            if(currentSet != null) {
+                if (currentClone == null) {
+                    currentClone = new Clone(astTable);
+                    clones.add(currentClone);
+                }
+                currentClone.add(fragments.get(currentId));
+                for(Integer nodeId : currentSet) {
+                    groupGraph(visitedNode, nodeId, links, fragments, clones, currentClone);
+                }
+            }
+        }
         return clones;
     }
 
