@@ -24,8 +24,8 @@ public class javascriptFragmentAnalyserCl {
     }
 
     public enum algoDistance {
-        manhatan,
-        manhatanNormal,
+        manhattan,
+        manhattanNormal,
         euclidien
     }
 
@@ -72,9 +72,9 @@ public class javascriptFragmentAnalyserCl {
             for(int j = i + 1; j < dataVecs.size(); j++) {
                 double distance = getDistance(dataVecs.get(i), dataVecs.get(j), algo);
                 if(distance <= theshold) {
-                    Set set = links.get(i);
+                    Set<Integer> set = links.get(i);
                     if(set == null) {
-                        set = new HashSet();
+                        set = new HashSet<>();
                         links.put(i, set);
                     }
                     set.add(j);
@@ -111,10 +111,10 @@ public class javascriptFragmentAnalyserCl {
     }
 
     private double getDistance(List<Integer> vec1, List<Integer> vec2, algoDistance algo) {
-        if(algo == algoDistance.manhatan) {
-            return getDistanceManhatan(vec1, vec2);
-        } else if(algo == algoDistance.manhatanNormal) {
-            return getDistanceManhatanNormal(vec1, vec2);
+        if(algo == algoDistance.manhattan) {
+            return getDistanceManhattan(vec1, vec2);
+        } else if(algo == algoDistance.manhattanNormal) {
+            return getDistanceManhattanNormal(vec1, vec2);
         } else if(algo == algoDistance.euclidien) {
             return getDistanceEucledienne(vec1, vec2);
         }
@@ -132,7 +132,7 @@ public class javascriptFragmentAnalyserCl {
         return vec;
     }
 
-    public double getDistanceManhatan(List<Integer> vec1, List<Integer> vec2) {
+    public double getDistanceManhattan(List<Integer> vec1, List<Integer> vec2) {
         int distance = 0;
         int size1 = vec1.size();
         int size2 = vec2.size();
@@ -145,7 +145,7 @@ public class javascriptFragmentAnalyserCl {
         return distance;
     }
 
-    public double getDistanceManhatanNormal(List<Integer> vec1, List<Integer> vec2) {
+    public double getDistanceManhattanNormal(List<Integer> vec1, List<Integer> vec2) {
         int distance = 0;
         int size1 = vec1.size();
         int size2 = vec2.size();

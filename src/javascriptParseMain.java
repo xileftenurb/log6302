@@ -84,17 +84,21 @@
             cloneThreshold = Integer.valueOf(cloneThresholdString);
 
         String algoDistanceString = globalOptionsCl.get("algoDistance");
-        javascriptFragmentAnalyserCl.algoDistance algo = javascriptFragmentAnalyserCl.algoDistance.manhatan;
+        javascriptFragmentAnalyserCl.algoDistance algo;
         switch(algoDistanceString){
-            case "manhatan" :
-                algo = javascriptFragmentAnalyserCl.algoDistance.manhatan;
+            case "manhattan" :
+                algo = javascriptFragmentAnalyserCl.algoDistance.manhattan;
                 break;
-            case "manhatanNormal" :
-                algo = javascriptFragmentAnalyserCl.algoDistance.manhatanNormal;
+            case "manhattanNormal" :
+                algo = javascriptFragmentAnalyserCl.algoDistance.manhattanNormal;
                 break;
             case "euclidien" :
                 algo = javascriptFragmentAnalyserCl.algoDistance.euclidien;
                 break;
+            default :
+                System.err.println("Error : algo " + algoDistanceString + "do not exist");
+                System.exit(1);
+                return;
         }
 
         String algoDataVec = globalOptionsCl.get("algoDataVec");
@@ -153,11 +157,11 @@
                 new javascriptFragmentAnalyserCl();
         javasriptFragAnalyse.initParams(astTable);
 
-
-        System.out.println("LIST FRAG");
-
-        System.out.println(listFrag.toString());
-
+        
+        if(globalOptionsCl.get("printFrag").equals("true")) {
+            System.out.println("LIST FRAG");
+            System.out.println(listFrag.toString());
+        }
 
         List<Clone> clones;
         if(useAlgoDataVec) {
@@ -166,15 +170,33 @@
             clones = javasriptFragAnalyse.getCloneTypeNoeud(listFrag, algo, cloneThreshold);
         }
 
-        System.out.println("LIST CLONES");
 
-        System.out.println(clones);
-
-        System.out.println("END LIST CLONES");
-
+        if(globalOptionsCl.get("printClone").equals("true")) {
+            System.out.println("LIST CLONES");
+            System.out.println(clones);
+            System.out.println("END LIST CLONES");
+        }
         System.out.println("nombre de fragment : " + listFrag.size());
         System.out.println("nombre de clones : " + clones.size());
+        
+        int tailleMin = listFrag.size();
+        int tailleMax = 0;
+        int total = 0; 
 
+        for(Clone c : clones) {
+            int curSize = c.size();
+            total += curSize;
+            if(tailleMin > curSize) {
+                tailleMin = curSize;
+            }
+            if(tailleMax < curSize) {
+                tailleMax = curSize;
+            }
+        }
+
+        System.out.println("nombre de fragments dans des clones : " + total);
+        System.out.println("taille de clones max : " + tailleMax);
+        System.out.println("taille de clones min : " + tailleMin);
         System.out.println("Successful termination");
         System.exit(0);
     }

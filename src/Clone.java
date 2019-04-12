@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * Created by febru on 19-04-10.
  */
@@ -15,6 +14,10 @@ public class Clone {
 
     public void add(Frag f) {
         frags.add(f);
+    }
+    
+    public int size() {
+        return frags.size();
     }
 
     public String toString() {

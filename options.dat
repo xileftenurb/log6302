@@ -1,5 +1,6 @@
 printOptions true
-fragThreshold 20
-cloneThreshold 0
-algoDistance manhatanNormal
+printClone true
+fragThreshold 40
+cloneThreshold 1
+algoDistance manhattanNormal 
 algoDataVec false
